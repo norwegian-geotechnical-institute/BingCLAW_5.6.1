@@ -5,7 +5,7 @@ BingCLAW is licensed under the Creative Commons BY-NC-ND license.
 
 https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-This repositoey contains the source code for BingClaw version 5.6.1 for simulating landslide dynamics, with an example case study.
+This repository contains the source code for BingClaw version 5.6.1 for simulating landslide dynamics, with an example case study.
 We describe here how to set up and compile BingClaw and run a simulation of the Storegga landslide.
 
 See https://www.ngi.no/eng/Services/Technical-expertise/Tsunamis/Model-for-simulating-dynamics-of-cohesive-landslides
