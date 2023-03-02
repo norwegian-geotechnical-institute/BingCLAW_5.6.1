@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-
+Copyright 2023 Norwegian Geotechnical Institute
 
 <div id="deed" class="yellow">
 <div id="deed-head">
