@@ -5,6 +5,13 @@ BingCLAW is licensed under the Creative Commons BY-NC-ND license.
 
 https://creativecommons.org/licenses/by-nc-nd/4.0/
 
+Release 1.0.0 from 2023/03/03 is permanently available on Zenodo with DOI 10.5281/zenodo.7695422
+
+https://dx.doi.org/10.5281/zenodo.7695422
+
+[![DOI](https://zenodo.org/badge/608129638.svg)](https://zenodo.org/badge/latestdoi/608129638)
+
+
 This repository contains the source code for BingClaw version 5.6.1 for simulating landslide dynamics, with an example case study.
 We describe here how to set up and compile BingClaw and run a simulation of the Storegga landslide.
 
