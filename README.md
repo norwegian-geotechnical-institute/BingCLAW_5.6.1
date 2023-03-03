@@ -57,7 +57,11 @@ LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a BLAS=/usr/lib/x86_64-linux-g
 
 You should then be able to compile BingClaw5.6.1 using the following sequence:
 
-make -f Makefile.modules make -f Makefile.nonmodules make BingClaw5.6.1
+make -f Makefile.modules 
+
+make -f Makefile.nonmodules 
+
+make BingClaw5.6.1
 
 This generates the executable BingClaw5.6.1
 
