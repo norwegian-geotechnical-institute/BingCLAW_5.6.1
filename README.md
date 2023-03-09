@@ -74,3 +74,12 @@ python setrun.py
 We then execute the BingClaw program you have just compiled, and this should be generate the required output.
 
 Further scripts on visualizing and analyzing the output will be provided at a later date.
+
+# Note on compiling 2023/03/09
+
+The file Makefile.nonmodules requires the following line to allow it to compile in situations described on this page:
+https://forum.mmm.ucar.edu/threads/how-to-fix-error-rank-mismatch-between-actual-argument-at-1-and-actual-argument-at-2.11998/#post-27521 
+
+OPTIM=    -O3 -cpp -fallow-argument-mismatch
+
+
