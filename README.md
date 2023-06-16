@@ -39,7 +39,9 @@ We then need to install and activate clawpack5.6.1.
 
 Choose a directory in which to place it: e.g. ${HOME}/clawpack_src
 
-Run the command: pip install --src=$HOME/clawpack_src --user -e git+https://github.com/clawpack/clawpack.git@v5.6.1#egg=clawpack-v5.6.1
+Run the command: 
+
+pip install --src=$HOME/clawpack_src --user -e git+https://github.com/clawpack/clawpack.git@v5.6.1#egg=clawpack-v5.6.1
 
 Then, add the following lines to ${HOME}/.bashrc file (or equivalent)
 
