@@ -43,7 +43,9 @@ Run the command: pip install --src=$HOME/clawpack_src --user -e git+https://gith
 
 Then, add the following lines to ${HOME}/.bashrc file (or equivalent)
 
-export CLAW=$HOME/clawpack_src/clawpack-v5-6-1 export PYTHONPATH=$CLAW:$PYTHONPATH
+export CLAW=$HOME/clawpack_src/clawpack-v5-6-1 
+
+export PYTHONPATH=$CLAW:$PYTHONPATH
 
 We then need to compile BingClaw. If you then do
 
