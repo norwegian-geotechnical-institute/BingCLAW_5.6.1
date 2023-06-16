@@ -57,7 +57,9 @@ you need to alter the Makefile such that the variables LAPACK and BLAS point to 
 
 e.g.
 
-LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a
+LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a 
+
+BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a
 
 You should then be able to compile BingClaw5.6.1 using the following sequence:
 
