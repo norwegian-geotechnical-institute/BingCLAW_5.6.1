@@ -24,6 +24,11 @@ Here we outline the steps required to perform a simulation of the Storegga slide
 We will need clawpack (version 5.6.1), python3, LAPACK and BLAS.
 
 If you do not have LAPACK and BLAS, the code can be obtained from https://github.com/Reference-LAPACK/lapack Follow the instructions for compilation and you should end up with libraries liblapack.a and librefblas.a. You will need to modify a Makefile to point to these files.
+You will also need HDF5. If you have superuser rights, then LAPACK, BLAS, and HDF5 are all installed using  
+
+sudo apt-get install libblas-dev liblapack-dev  
+sudo apt-get install libhdf5-serial-dev  
+  
 
 If you do not have python3 and do not have superuser rights to your Linux, you can type
 
@@ -39,37 +44,45 @@ We then need to install and activate clawpack5.6.1.
 
 Choose a directory in which to place it: e.g. ${HOME}/clawpack_src
 
-Run the command: 
+Obtain the tar file *clawpack-v5.6.1.tar.gz* using  
 
-pip install --src=$HOME/clawpack_src --user -e git+https://github.com/clawpack/clawpack.git@v5.6.1#egg=clawpack-v5.6.1
+wget https://github.com/clawpack/clawpack/files/3781620/clawpack-v5.6.1.tar.gz
+
+then do  
+
+tar xvf clawpack-v5.6.1.tar.gz  
+
+then  
+
+cd clawpack-v5.6.1  
+pwd  
 
 Then, add the following lines to ${HOME}/.bashrc file (or equivalent)
 
-export CLAW=$HOME/clawpack_src/clawpack-v5-6-1 
+export CLAW=$HOME/clawpack_src/clawpack-v5.6.1  
 
-export PYTHONPATH=$CLAW:$PYTHONPATH
+(setting this variable to what is shown on typing "pwd")  
+
+export PYTHONPATH=$CLAW:$PYTHONPATH  
 
 We then need to compile BingClaw. If you then do
 
-tar xvf BingClaw5.6.1_singlesource.tar cd BingClaw5.6.1_singlesource
+tar xvf BingClaw5.6.1_singlesource.tar  
+cd BingClaw5.6.1_singlesource  
 
-you need to alter the Makefile such that the variables LAPACK and BLAS point to the correct places:
+you need to alter the files src/Makefile* such that the variables LAPACK and BLAS point to the correct places:
 
 e.g.
 
-LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a 
+LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a  
 
-BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a
+BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a  
 
-You should then be able to compile BingClaw5.6.1 using the following sequence:
+You should then be able to compile BingClaw5.6.1 using the following sequence:  
 
-make -f Makefile.modules 
+sh compile_src.sh  
 
-make -f Makefile.nonmodules 
-
-make BingClaw5.6.1
-
-This generates the executable BingClaw5.6.1
+This generates the executable *bin/BingClaw5.6.1*
 
 Finally, create a directory in which you want to run BingClaw Save the file setrun.py in it and make sure that the lines with "PaleoNorthAtlantic.tt3" and "storegga_ini.tt3" point to the correct location. (You will have to (g)unzip the file PaleoNorthAtlantic.tt3.gz before running the program.)
 
