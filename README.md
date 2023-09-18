@@ -75,8 +75,11 @@ you need to alter the files src/Makefile* such that the variables LAPACK and BLA
 e.g.
 
 LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a  
-
 BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a  
+
+and with the correct path for the HDF5 library, e.g.:
+
+-I/usr/include/hdf5/serial
 
 You should then be able to compile BingClaw5.6.1 using the following sequence:  
 
