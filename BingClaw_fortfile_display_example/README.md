@@ -26,4 +26,4 @@ but you will need to adjust paths for GMT and install all of the python dependen
 
 If successful, you should end up with a figure resembling this one:  
 
-![png file generated of BingClaw simulation output](example_q0179.png)!
+![png file generated of BingClaw simulation output](example_q0179.png)
