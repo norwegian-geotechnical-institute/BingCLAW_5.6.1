@@ -94,7 +94,10 @@ python setrun.py
 
 We then execute the BingClaw program you have just compiled, and this should be generate the required output.
 
-Further scripts on visualizing and analyzing the output will be provided at a later date.
+There are many different ways of processing the output from the BingClaw simulations.
+In the directory *BingClaw_fortfile_display_example* we present a simple solution for displaying the output from the Storegga simulation.
+
+
 
 # Note on compiling 2023/03/09
 
