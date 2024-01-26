@@ -13,6 +13,7 @@ It consists of a bash script *one_fortfile_2_png.sh* and three python scripts:
 claw2file3.py
 format3.py
 sct3/io.py
+sct3/Grid2D.py
 ```
 
 The execution takes the form:  
