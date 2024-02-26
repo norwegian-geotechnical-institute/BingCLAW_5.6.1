@@ -27,4 +27,17 @@ but you will need to adjust paths for GMT and install all of the python dependen
 
 If successful, you should end up with a figure resembling this one:  
 
-![png file generated of BingClaw simulation output](example_q0179.png)
+![png file generated of BingClaw simulation output](example_q0179.png)  
+
+In the case of running GMT6, where the program gmt is in the user's path (e.g. under /usr/bin), then the script *gmt6_one_fortfile_2_png.sh* should work.
+Running 
+
+```
+bash make_all_png_files.sh
+```
+
+should make one png file for each output file from BingCLAW (../fort.q*) and an animated gif file can be made by running
+
+```
+python3 make_animated_gif_file.py
+```
