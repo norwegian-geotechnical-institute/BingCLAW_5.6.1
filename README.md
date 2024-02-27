@@ -14,7 +14,13 @@ https://dx.doi.org/10.5281/zenodo.8354763
 This repository contains the source code for BingClaw version 5.6.1 for simulating landslide dynamics, with an example case study.
 We describe here how to set up and compile BingClaw and run a simulation of the Storegga landslide.
 
-See https://www.ngi.no/eng/Services/Technical-expertise/Tsunamis/Model-for-simulating-dynamics-of-cohesive-landslides
+A comprehensive description of the simulation of the Storegga landslide is provided in the following publication:  
+https://doi.org/10.1029/2018JC014893  
+*(Jihwan Kim, Finn Løvholt, Dieter Issler, and Carl Fredrik Forsberg,  
+Landslide Material Control on Tsunami Genesis—The Storegga Slide and Tsunami (8,100 Years BP),  
+JGR Oceans, vol 124(6), June 2019, Pages 3607-3627)*   
+
+See also https://www.ngi.no/eng/Services/Technical-expertise/Tsunamis/Model-for-simulating-dynamics-of-cohesive-landslides
 
 This directory contains four files: BingClaw5.6.1_singlesource.tar setrun.py PaleoNorthAtlantic.tt3.gz storegga_ini.tt3
 
