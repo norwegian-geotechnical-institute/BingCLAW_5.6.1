@@ -744,7 +744,7 @@ class io:
             for i in range(self.nx):
                 file.write(" %20.10f" %(self.z[i,j]))
             file.write("\n")
-            file.close()
+        file.close()
 
     def _write_xyz(self):
         file=open(self.fn,'w')
