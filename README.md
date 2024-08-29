@@ -26,22 +26,36 @@ This directory contains four files: BingClaw5.6.1_singlesource.tar setrun.py Pal
 
 Here we outline the steps required to perform a simulation of the Storegga slide using BingClaw on a Linux system.
 
-We will need clawpack (version 5.6.1), python3, LAPACK and BLAS.
+We will need clawpack (version 5.6.1), gfortran, python3, LAPACK and BLAS.
 
 If you do not have LAPACK and BLAS, the code can be obtained from https://github.com/Reference-LAPACK/lapack Follow the instructions for compilation and you should end up with libraries liblapack.a and librefblas.a. You will need to modify a Makefile to point to these files.
 You will also need HDF5. If you have superuser rights, then LAPACK, BLAS, and HDF5 are all installed using  
 
+```
 sudo apt-get install libblas-dev liblapack-dev  
-sudo apt-get install libhdf5-serial-dev  
-  
+sudo apt-get install libhdf5-serial-dev
+```
+If you get a message of the form *E: Unable to locate package libhdf5-dev* then you will most likely have to update apt-get, e.g.  
+```
+sudo apt-get update -y
+sudo apt-get install -y libhdf5-dev
+```
+Should gfortran be lacking from your system, this is installed using
+```
+sudo apt install gfortran
+```
 
 If you do not have python3 and do not have superuser rights to your Linux, you can type
 
+```
 wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+```
 
 followed by
 
+```
 bash Anaconda3-2020.11-Linux-x86_64.sh
+```
 
 and follow the instructions.
 
@@ -51,44 +65,62 @@ Choose a directory in which to place it: e.g. ${HOME}/clawpack_src
 
 Obtain the tar file *clawpack-v5.6.1.tar.gz* using  
 
+```
 wget https://github.com/clawpack/clawpack/files/3781620/clawpack-v5.6.1.tar.gz
+```
 
 then do  
 
-tar xvf clawpack-v5.6.1.tar.gz  
+```
+tar xvf clawpack-v5.6.1.tar.gz
+```
 
 then  
 
+```
 cd clawpack-v5.6.1  
-pwd  
+pwd
+```
 
 Then, add the following lines to ${HOME}/.bashrc file (or equivalent)
 
-export CLAW=$HOME/clawpack_src/clawpack-v5.6.1  
+```
+export CLAW=$HOME/clawpack_src/clawpack-v5.6.1
+```
 
 (setting this variable to what is shown on typing "pwd")  
 
-export PYTHONPATH=$CLAW:$PYTHONPATH  
+```
+export PYTHONPATH=$CLAW:$PYTHONPATH
+```
 
 We then need to compile BingClaw. If you then do
 
+```
 tar xvf BingClaw5.6.1_singlesource.tar  
-cd BingClaw5.6.1_singlesource  
+cd BingClaw5.6.1_singlesource
+```
 
 you need to alter the files src/Makefile* such that the variables LAPACK and BLAS point to the correct places:
 
 e.g.
 
+```
 LAPACK=/usr/lib/x86_64-linux-gnu/lapack/liblapack.a  
-BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a  
+BLAS=/usr/lib/x86_64-linux-gnu/blas/libblas.a
+```
 
 and with the correct path for the HDF5 library, e.g.:
 
+```
 -I/usr/include/hdf5/serial
+```
 
 You should then be able to compile BingClaw5.6.1 using the following sequence:  
 
-sh compile_src.sh  
+```
+sh compile_src.sh
+```
 
 This generates the executable *bin/BingClaw5.6.1*
 
@@ -96,7 +128,9 @@ Finally, create a directory in which you want to run BingClaw Save the file setr
 
 Execute the setrun.py file using
 
+```
 python setrun.py
+```
 
 We then execute the BingClaw program you have just compiled, and this should be generate the required output.
 
@@ -110,6 +144,8 @@ In the directory *BingClaw_fortfile_display_example* we present a simple solutio
 The file Makefile.nonmodules requires the following line to allow it to compile in situations described on this page:
 https://forum.mmm.ucar.edu/threads/how-to-fix-error-rank-mismatch-between-actual-argument-at-1-and-actual-argument-at-2.11998/#post-27521 
 
+```
 OPTIM=    -O3 -cpp -fallow-argument-mismatch
+```
 
 
