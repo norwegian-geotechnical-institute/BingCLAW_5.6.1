@@ -124,7 +124,8 @@ sh compile_src.sh
 
 This generates the executable *bin/BingClaw5.6.1*
 
-Finally, create a directory in which you want to run BingClaw Save the file setrun.py in it and make sure that the lines with "PaleoNorthAtlantic.tt3" and "storegga_ini.tt3" point to the correct location. (You will have to (g)unzip the file PaleoNorthAtlantic.tt3.gz before running the program.)
+Finally, create a directory in which you want to run BingClaw Save the file setrun.py in it and make sure that the lines with "PaleoNorthAtlantic.tt3" and "storegga_ini.tt3" point to the correct location. (You will have to (g)unzip the file PaleoNorthAtlantic.tt3.gz before running the program.)  
+Note that the elevation file has depth (pointing downwards) as positive, and height (pointing upwards) as negative.  
 
 Execute the setrun.py file using
 
