@@ -137,6 +137,13 @@ We then execute the BingClaw program you have just compiled, and this should be 
 There are many different ways of processing the output from the BingClaw simulations.
 In the directory *BingClaw_fortfile_display_example* we present a simple solution for displaying the output from the Storegga simulation.
 
+# Specification of a spatially varying initial yield strength    
+
+It is possible to specify a file providing a spatial distribution of the initial yield strength.  
+You can now set an integer flag "i_use_var_tau_y" to 1 to impose a spatially varying initial yield strength using absolute values, and to 2 to impose a spatially varying initial yield strength using "relative values" (i.e. a map of values 0 < val < 1 such that tauy = tauy_r + val*(tauy_i - tauy_r) ... ) The file containing the map of initial yield strength is specified using the variable name "fname_tau_y". Examples of setrun.py files and distribution files are found in the directories "absolute_initial_tauy_example" and "relative_initial_tauy_example".
+Note that the the global values of tauy_i and tauy_r still apply, the spatially varying map just alters the total shear deformation at the start of the simulation. The value of tauy must always lie between tauy_i and tauy_r.
+
+
 
 
 # Note on compiling 2023/03/09
