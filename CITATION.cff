@@ -1,16 +1,15 @@
 # This CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to generate yours today!
 
-cff-version: 1.2.0
+cff-version: 1.1.0
 title: BingCLAW_5.6.1
 message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
+  "If you use this software, please cite it using the metadata from this file."
 type: software
 authors:
-  - given-names: Jihwan
-    family-names: Kim
-    orcid: 'https://orcid.org/0000-0001-6112-3213'
+  - family-names: Kim
+    given-names: Jihwan
+    orcid: https://orcid.org/0000-0001-6112-3213
     affiliation: >-
       Department of Meteorology and Geophysics, Instituto
       Português do Mar e da Atmosfera (IPMA), Lisbon,
@@ -33,14 +32,12 @@ repository-code: >-
 url: >-
   https://www.ngi.no/en/research-and-consulting/natural-hazards-container/tsunamis/model-for-simulating-dynamics-of-cohesive-landslides/
 abstract: >-
-  BingCLAW is a model for simulating the dynamics of
-  cohesive (clay-rich) landslides. 
+  "BingCLAW is a model for simulating the dynamics of cohesive (clay-rich) landslides."
 keywords:
   - landslide dynamics
   - numerical simulations
   - ClawPACK
   - Conservation Laws
   - cohesive landslides
-license: CC-BY-NC-ND-4.0
 version: v1.0.3
-date-released: '2025-04-01'
+date-released: 2025-04-01
