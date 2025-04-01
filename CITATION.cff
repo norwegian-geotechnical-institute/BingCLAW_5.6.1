@@ -1,43 +1,9 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.1.0
-title: BingCLAW_5.6.1
-message: >-
-  "If you use this software, please cite it using the metadata from this file."
-type: software
+message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Kim
-    given-names: Jihwan
-    orcid: https://orcid.org/0000-0001-6112-3213
-    affiliation: >-
-      Department of Meteorology and Geophysics, Instituto
-      Português do Mar e da Atmosfera (IPMA), Lisbon,
-      Portugal
-  - given-names: Steven J.
-    family-names: Gibbons
-    orcid: 'https://orcid.org/0000-0002-7822-0244'
-    affiliation: Norwegian Geotechnical Institute
-    email: steven.gibbons@ngi.no
-  - given-names: Finn
-    family-names: Løvholt
-    affiliation: Norwegian Geotechnical Institute
-    orcid: 'https://orcid.org/0000-0003-1019-7321'
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.8354763
-    description: Permanent identifier of Zenodo repository
-repository-code: >-
-  https://github.com/norwegian-geotechnical-institute/BingCLAW_5.6.1
-url: >-
-  https://www.ngi.no/en/research-and-consulting/natural-hazards-container/tsunamis/model-for-simulating-dynamics-of-cohesive-landslides/
-abstract: >-
-  "BingCLAW is a model for simulating the dynamics of cohesive (clay-rich) landslides."
-keywords:
-  - landslide dynamics
-  - numerical simulations
-  - ClawPACK
-  - Conservation Laws
-  - cohesive landslides
+- family-names: Gibbons
+  given-names: Steven
+orcid: https://orcid.org/0000-0002-7822-0244
+title: BingCLAW_5.6.1
 version: v1.0.3
 date-released: 2025-04-01
