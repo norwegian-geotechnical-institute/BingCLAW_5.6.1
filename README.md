@@ -14,6 +14,11 @@ https://dx.doi.org/10.5281/zenodo.8354763
 This repository contains the source code for BingClaw version 5.6.1 for simulating landslide dynamics, with an example case study.
 We describe here how to set up and compile BingClaw and run a simulation of the Storegga landslide.
 
+BingCLAW is one of the codes included in the GEO-INQUIRE Virtual Access to the next generation of software as a service (VA4-532-1).  
+(see https://www.geo-inquire.eu/virtual-access/software for details.)  
+
+![GEO-INQUIRE project logo](Geo-INQUIRE_logo_small.png)
+
 A comprehensive description of the simulation of the Storegga landslide is provided in the following publication:  
 https://doi.org/10.1029/2018JC014893  
 *(Jihwan Kim, Finn Løvholt, Dieter Issler, and Carl Fredrik Forsberg,  
