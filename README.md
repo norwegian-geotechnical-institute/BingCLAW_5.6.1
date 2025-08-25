@@ -25,6 +25,8 @@ https://doi.org/10.1029/2018JC014893
 Landslide Material Control on Tsunami Genesis—The Storegga Slide and Tsunami (8,100 Years BP),  
 JGR Oceans, vol 124(6), June 2019, Pages 3607-3627)*   
 
+Please see the file *bingclaw_tutorial_20250825_v0.pdf* for further details of the model.  
+
 See also https://www.ngi.no/eng/Services/Technical-expertise/Tsunamis/Model-for-simulating-dynamics-of-cohesive-landslides
 
 This directory contains four files: BingClaw5.6.1_singlesource.tar setrun.py PaleoNorthAtlantic.tt3.gz storegga_ini.tt3
