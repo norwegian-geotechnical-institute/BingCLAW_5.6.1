@@ -5,9 +5,9 @@ BingCLAW is licensed under the Creative Commons BY-NC-ND license.
 
 https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-Release v1.0.1 from 2023/09/18 is permanently available on Zenodo with DOI 10.5281/zenodo.8354763  
+Release v1.0.4 from 2025/08/28 is permanently available on Zenodo with DOI 10.5281/zenodo.8354763  
 
-https://dx.doi.org/10.5281/zenodo.8354763  
+[https://dx.doi.org/10.5281/zenodo.8354763](https://doi.org/10.5281/zenodo.16978463)  
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8354763.svg)](https://doi.org/10.5281/zenodo.8354763)
 
