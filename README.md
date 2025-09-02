@@ -155,8 +155,8 @@ Note that the the global values of tauy_i and tauy_r still apply, the spatially 
 
 # Note on compiling 2023/03/09
 
-The file Makefile.nonmodules requires the following line to allow it to compile in situations described on this page:
-https://forum.mmm.ucar.edu/threads/how-to-fix-error-rank-mismatch-between-actual-argument-at-1-and-actual-argument-at-2.11998/#post-27521 
+The file Makefile.nonmodules may require the following line to allow it to compile in some situations (this issue was discovered using gfortran v11.3.0 on Ubuntu 22).
+
 
 ```
 OPTIM=    -O3 -cpp -fallow-argument-mismatch
