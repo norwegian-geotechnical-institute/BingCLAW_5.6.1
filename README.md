@@ -29,7 +29,13 @@ Please see the file *bingclaw_tutorial_2025.pdf* for further details of the mode
 
 See also https://www.ngi.no/eng/Services/Technical-expertise/Tsunamis/Model-for-simulating-dynamics-of-cohesive-landslides
 
-This directory contains four files: BingClaw5.6.1_singlesource.tar setrun.py PaleoNorthAtlantic.tt3.gz storegga_ini.tt3
+This directory contains four files: BingClaw5.6.1_singlesource.tar setrun.py PaleoNorthAtlantic.tt3.gz storegga_ini.tt3  
+
+After cloning, you will need to type  
+```
+gunzip PaleoNorthAtlantic.tt3.gz  
+```
+to uncompress this large file.  
 
 Here we outline the steps required to perform a simulation of the Storegga slide using BingClaw on a Linux system.
 
