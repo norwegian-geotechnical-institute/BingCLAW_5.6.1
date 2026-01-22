@@ -16,6 +16,8 @@ We describe here how to set up and compile BingClaw and run a simulation of the 
 
 BingCLAW is one of the codes included in the GEO-INQUIRE Virtual Access to the next generation of software as a service (VA4-532-1).  
 (see https://www.geo-inquire.eu/virtual-access/software for details.)  
+The Geo-INQUIRE project is funded by the European Commission under project
+number 101058518 within the HORIZON-INFRA-2021-SERV-01 call.  
 
 ![GEO-INQUIRE project logo](Geo-INQUIRE_logo_small.png)
 
