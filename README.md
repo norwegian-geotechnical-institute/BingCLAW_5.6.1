@@ -155,7 +155,8 @@ In the directory *BingClaw_fortfile_display_example* we present a simple solutio
 # Specification of a spatially varying initial yield strength    
 
 It is possible to specify a file providing a spatial distribution of the initial yield strength.  
-You can now set an integer flag "i_use_var_tau_y" to 1 to impose a spatially varying initial yield strength using absolute values, and to 2 to impose a spatially varying initial yield strength using "relative values" (i.e. a map of values 0 < val < 1 such that tauy = tauy_r + val*(tauy_i - tauy_r) ... ) The file containing the map of initial yield strength is specified using the variable name "fname_tau_y". Examples of setrun.py files and distribution files are found in the directories "absolute_initial_tauy_example" and "relative_initial_tauy_example".
+You can now set an integer flag "i_use_var_tau_y" to 1 to impose a spatially varying initial yield strength using absolute values, and to 2 to impose a spatially varying initial yield strength using "relative values" (i.e. a map of values 0 < val < 1 such that tauy = tauy_r + val*(tauy_i - tauy_r) ... ) The file containing the map of initial yield strength is specified using the variable name "fname_tau_y". Examples of setrun.py files and distribution files are found in the directories "absolute_initial_tauy_example" 
+(see https://github.com/norwegian-geotechnical-institute/BingCLAW_5.6.1/tree/main/absolute_initial_tauy_example for an example setrun.py file) and "relative_initial_tauy_example" (please see https://github.com/norwegian-geotechnical-institute/BingCLAW_5.6.1/tree/main/relative_initial_tauy_example for an example setrun.py file).
 Note that the the global values of tauy_i and tauy_r still apply, the spatially varying map just alters the total shear deformation at the start of the simulation. The value of tauy must always lie between tauy_i and tauy_r.
 
 
