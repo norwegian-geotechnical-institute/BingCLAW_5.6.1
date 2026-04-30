@@ -159,6 +159,32 @@ You can now set an integer flag "i_use_var_tau_y" to 1 to impose a spatially var
 (see https://github.com/norwegian-geotechnical-institute/BingCLAW_5.6.1/tree/main/absolute_initial_tauy_example for an example setrun.py file) and "relative_initial_tauy_example" (please see https://github.com/norwegian-geotechnical-institute/BingCLAW_5.6.1/tree/main/relative_initial_tauy_example for an example setrun.py file).
 Note that the the global values of tauy_i and tauy_r still apply, the spatially varying map just alters the total shear deformation at the start of the simulation. The value of tauy must always lie between tauy_i and tauy_r.
 
+# A note on performing the calculations in Cartesian geometry (UTM coordinates)  
+
+The example **setrun.py** file given in this repo uses geographical (latitude, longitude) coordinates.  
+BingClaw will also run in Cartesian (UTM) coordinates but the following two changes need to be made to the setrun.py file.  
+
+(1) Change the line
+```
+clawdata.capa_index = 2
+```
+(for geographical coordinates)  
+to  
+```
+clawdata.capa_index = 0
+```
+(for UTM coordinates).  
+
+(2) Change the line
+```
+geo_data.coordinate_system = 2
+```
+(for geographical coordinates)  
+to  
+```
+geo_data.coordinate_system = 1
+```
+(for UTM coordinates).
 
 
 
