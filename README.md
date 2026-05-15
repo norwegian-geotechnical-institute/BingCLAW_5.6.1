@@ -186,6 +186,11 @@ geo_data.coordinate_system = 1
 ```
 (for UTM coordinates).
 
+# A note on generating time-dependent bathymetry for geoclaw
+
+The output from BingCLAW can be used by geoclaw for tsunami simulation.  
+The script *makedtopo.py* (written by Jihwan Kim) can be modified to point to the folder containing your BingClaw output and will
+generate a "dtopo" file for geoclaw.  
 
 
 # Note on compiling 2023/03/09
